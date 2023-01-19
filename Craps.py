@@ -8,6 +8,9 @@ def foo(win_num, lose_num, SumOfDice, goal_numbers):
     elif SumOfDice in goal_numbers:
         print(f"Now your goal number is {SumOfDice}:")
         return SumOfDice
+    if goal_numbers == []:
+        return win_num[0]
+
 
 arr = list(range(1, 7))
 win_num = [7, 11]
